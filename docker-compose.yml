@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+  jarvis:
+    build: .
+    container_name: jarvis
+    stdin_open: true  # Required for interactive text input
+    tty: true
+    environment:
+      - JARVIS_LLM_API_KEY=${JARVIS_LLM_API_KEY:-}
+      - JARVIS_LLM_BASE_URL=${JARVIS_LLM_BASE_URL:-https://api.openai.com/v1}
+      - JARVIS_LLM_MODEL=${JARVIS_LLM_MODEL:-gpt-4o-mini}
+      - JARVIS_TTS_ENABLED=false
+      - JARVIS_VOICE_INPUT_ENABLED=false
+      - JARVIS_NAME=Jarvis
+      - JARVIS_USER_NAME=Sir
+      - JARVIS_DATA_DIR=/app/data
+    volumes:
+      - jarvis-data:/app/data
+
+volumes:
+  jarvis-data:

@@ -42,8 +42,9 @@ class PasswordGeneratorSkill(Skill):
 
         return SkillResult(
             success=True,
-            message=f"Generated a {length}-character password: {password}\nStrength: {strength}",
-            data={"password": password, "length": length, "strength": strength}
+            message=f"Generated a {length}-character password (see below). Strength: {strength}",
+            data={"password": password, "length": length, "strength": strength},
+            should_speak=False
         )
 
     def _parse_length(self, query: str) -> int:

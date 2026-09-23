@@ -6,8 +6,8 @@ from .registry import Skill, SkillResult
 
 class NewsSkill(Skill):
     name = "news"
-    description = "Get the latest news headlines"
-    triggers = ["news", "headlines", "what's happening", "what's going on in the world", "today's news"]
+    description = "Get the latest tech news headlines"
+    triggers = ["news", "headlines", "what's happening", "what's going on in the world", "today's news", "tech news"]
 
     def execute(self, query: str, context: dict) -> SkillResult:
         try:

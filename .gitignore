@@ -37,3 +37,5 @@ htmlcov/
 # Notes data
 data/notes.json
 data/tasks.json
+data/reminders.json
+data/qr_*.png
