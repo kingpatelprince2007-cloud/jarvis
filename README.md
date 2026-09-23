@@ -118,13 +118,22 @@ jarvis/
 │   ├── speech.py             # Voice I/O
 │   └── skills/
 │       ├── registry.py       # Skill base classes & registry
-│       ├── weather.py
-│       ├── web_search.py
+│       ├── time_date.py
+│       ├── timer.py
+│       ├── calculator.py
+│       ├── currency_converter.py
+│       ├── unit_converter.py
 │       ├── system_info.py
+│       ├── ip_address.py
+│       ├── weather.py
+│       ├── news.py
+│       ├── web_search.py
+│       ├── translator.py
 │       ├── notes.py
+│       ├── password_generator.py
+│       ├── random_fact.py
 │       ├── open_app.py
-│       ├── jokes.py
-│       └── time_date.py
+│       └── jokes.py
 ├── tests/
 ├── docs/
 ├── .env.example

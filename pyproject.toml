@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "jarvis-ai-assistant"
-version = "1.0.0"
+version = "1.1.0"
 description = "A Python AI assistant inspired by Iron Man's JARVIS"
 readme = "README.md"
 license = {file = "LICENSE"}
